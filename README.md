@@ -27,16 +27,20 @@ yo remote-containers-win7
 ```
 
 select virtual machine
-![select virtual machine](https://raw.githubusercontent.com/cinex-ru/generator-remote-containers-win7/main/images/select-vm.png)
+
+![select virtual machine](https://raw.githubusercontent.com/cinex-ru/generator-remote-containers-win7/master/images/select-vm.png)
 
 select container template from [vscode-dev-containers](https://github.com/microsoft/vscode-dev-containers)
-![select container template](https://raw.githubusercontent.com/cinex-ru/generator-remote-containers-win7/main/images/select-container-template.png)
+
+![select container template](https://raw.githubusercontent.com/cinex-ru/generator-remote-containers-win7/master/images/select-container-template.png)
 
 enter application name and folder
-![enter application name and folder](https://raw.githubusercontent.com/cinex-ru/generator-remote-containers-win7/main/images/appname-and-folder.png)
+
+![enter application name and folder](https://raw.githubusercontent.com/cinex-ru/generator-remote-containers-win7/master/images/appname-and-folder.png)
 
 after generator will finish, navigate to the created folder and run script before start vscode
-![select container template](https://raw.githubusercontent.com/cinex-ru/generator-remote-containers-win7/main/images/run-script.png)
+
+![select container template](https://raw.githubusercontent.com/cinex-ru/generator-remote-containers-win7/master/images/run-script.png)
 
 start vscode
 
