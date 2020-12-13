@@ -1,0 +1,54 @@
+{
+    "name": "generator-remote-containers-win7",
+    "version": "0.1.0",
+    "main": "index.js",
+    "license": "MIT",
+    "files": [
+        "generators"
+    ],
+    "dependencies": {
+        "chalk": "^4.1.0",
+        "comment-json": "^4.1.0",
+        "log-symbols": "^4.0.0",
+        "log-update": "^4.0.0",
+        "yeoman-generator": "^4.12.0",
+        "yosay": "^2.0.2"
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.10",
+        "@types/yeoman-generator": "^4.11.3",
+        "@types/yosay": "^0.0.29",
+        "@typescript-eslint/eslint-plugin": "^4.9.0",
+        "@typescript-eslint/parser": "^4.9.0",
+        "commitizen": "^4.2.2",
+        "cz-conventional-changelog": "3.3.0",
+        "eslint": "^7.14.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jest": "^24.1.3",
+        "husky": "^4.3.0",
+        "jest": "^26.6.3",
+        "standard-version": "^9.0.0",
+        "ts-jest": "^26.4.4",
+        "typescript": "^4.1.2"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn lint && yarn test"
+        }
+    },
+    "scripts": {
+        "cmz": "cz",
+        "release": "standart-version",
+        "prestart": "yarn build",
+        "build:app": "tsc -p ./src/app",
+        "build": "yarn build:app",
+        "lint": "eslint ./src/**/*.ts",
+        "test": "jest --passWithNoTests"
+    }
+}
