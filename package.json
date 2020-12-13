@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "main": "index.js",
     "license": "MIT",
+    "author": "cinex",
     "files": [
         "generators"
     ],
@@ -50,5 +51,15 @@
         "build": "yarn build:app",
         "lint": "eslint ./src/**/*.ts",
         "test": "jest --passWithNoTests"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cinex-ru/generator-remote-containers-win7.git"
+    },
+    "keywords": [
+        "yeoman",
+        "generator",
+        "remote-containers",
+        "yeoman-generator"
+    ]
 }
