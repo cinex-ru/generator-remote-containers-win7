@@ -45,7 +45,7 @@
     },
     "scripts": {
         "cmz": "cz",
-        "release": "standart-version",
+        "release": "yarn standard-version",
         "prestart": "yarn build",
         "build:app": "tsc -p ./src/app",
         "build": "yarn build:app",
